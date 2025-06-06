@@ -47,43 +47,31 @@ export default function Sidebar({ items, activeTab, onTabChange, isOpen, onClose
       </AnimatePresence>
 
       <div
-        className={`fixed inset-y-0 left-0 z-40 w-64 bg-gradient-to-b from-white/98 to-purple-50/95 backdrop-blur-xl border-r-4 border-purple-200 shadow-2xl lg:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 z-40 w-64 bg-gradient-to-b from-white/98 to-slate-50/95 backdrop-blur-xl border-r-4 border-slate-200 shadow-2xl lg:translate-x-0 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <div className="sticky top-0 z-10 flex items-center justify-between p-6 border-b-4 border-pink-200 bg-gradient-to-r from-pink-100 to-purple-100">
+        <div className="sticky top-0 z-10 flex items-center justify-center h-18 p-3 border-b-4 border-slate-200 bg-gradient-to-r from-slate-50 to-slate-100">
           <motion.div 
             className="hidden lg:flex items-center space-x-3"
             whileHover={{ scale: 1.05 }}
           >
             <div className="relative">
-              <div className="w-12 h-12 bg-pop-gradient rounded-2xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
                 <Gamepad2 className="h-6 w-6 text-white" />
               </div>
-              <Sparkles className="absolute -top-1 -right-1 h-4 w-4 text-yellow-400" />
             </div>
             <div>
-              <span className="text-xl font-black bg-pop-gradient bg-clip-text text-transparent">
-                ClanHub
-              </span>
-              <div className="text-xs text-purple-600 font-medium">みんなで楽しもう！</div>
+              <span className="text-xl font-black text-slate-800">ClanHub</span>
+              <div className="text-xs text-slate-600 font-medium">みんなで楽しもう！</div>
             </div>
-            <Heart className="h-5 w-5 text-pink-500" fill="currentColor" />
           </motion.div>
-          <motion.button
-            onClick={onClose}
-            className="lg:hidden p-2 hover:bg-pink-100 rounded-xl transition-colors"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <X className="h-5 w-5 text-purple-600" />
-          </motion.button>
         </div>
 
         <div className="h-[calc(100vh-8rem)] overflow-y-auto">
           <nav className="p-4">
             <div className="mb-4">
-              <h2 className="text-sm font-bold text-purple-600 uppercase tracking-wider px-2 mb-3 flex items-center">
+              <h2 className="text-sm font-bold text-slate-600 uppercase tracking-wider px-2 mb-3 flex items-center">
                 <span>📋 メニュー</span>
                 <div className="ml-2 text-xs animate-sparkle">✨</div>
               </h2>
@@ -111,8 +99,8 @@ export default function Sidebar({ items, activeTab, onTabChange, isOpen, onClose
                       className={cn(
                         "w-full flex items-center space-x-4 px-6 py-5 transition-all duration-300 relative overflow-hidden group border-l-4 rounded-r-2xl",
                         isActive
-                          ? "bg-pop-gradient text-white shadow-xl border-l-white bg-white/10 backdrop-blur-sm"
-                          : "hover:bg-pink-50 hover:border-l-purple-300 text-purple-700 border-l-transparent hover:shadow-lg"
+                          ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl border-l-white bg-white/10 backdrop-blur-sm"
+                          : "hover:bg-slate-50 hover:border-l-blue-400 text-slate-700 border-l-transparent hover:shadow-lg"
                       )}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
@@ -142,12 +130,12 @@ export default function Sidebar({ items, activeTab, onTabChange, isOpen, onClose
           </nav>
         </div>
 
-        <div className="sticky bottom-0 left-0 right-0 p-6 border-t-4 border-pink-200 bg-gradient-to-r from-purple-100 to-pink-100">
+        <div className="sticky bottom-0 left-0 right-0 p-6 border-t-4 border-slate-200 bg-gradient-to-r from-slate-50 to-slate-100">
           <div className="text-center">
-            <div className="text-sm font-bold text-purple-700 mb-1">
-              ClanHub v1.0.0 💖
+            <div className="text-sm font-bold text-slate-700 mb-1">
+              ClanHub v1.0.0
             </div>
-            <div className="text-xs text-purple-600">
+            <div className="text-xs text-slate-600">
               Made with 🌟 for gamers
             </div>
           </div>

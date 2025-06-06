@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Gamepad2, Users, Trophy, Zap, Star, ArrowRight, Heart, Sparkles, Smile } from 'lucide-react';
+import { Gamepad2, Users, Trophy, Zap, Star, ArrowRight, Sparkles, Smile, Heart } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -56,7 +56,7 @@ export default function LandingPage() {
               <Gamepad2 className="h-10 w-10 text-pink-500 animate-wiggle" />
               <Sparkles className="absolute -top-1 -right-1 h-4 w-4 text-yellow-400 animate-sparkle" />
             </div>
-            <span className="text-3xl font-black bg-pop-gradient bg-clip-text text-transparent animate-rainbow">
+            <span className="text-3xl font-black bg-pop-gradient bg-clip-text text-transparent">
               ClanHub
             </span>
             <Heart className="h-6 w-6 text-pink-400 animate-heartbeat" fill="currentColor" />
@@ -96,7 +96,7 @@ export default function LandingPage() {
               <div className="absolute -top-4 -left-4 text-4xl animate-bounce-cute">🌟</div>
               <div className="absolute -top-6 -right-2 text-3xl animate-dance">✨</div>
               <h1 className="text-6xl md:text-8xl font-black mb-4 leading-tight">
-                <span className="block bg-pop-gradient bg-clip-text text-transparent animate-rainbow">
+                <span className="block bg-pop-gradient bg-clip-text text-transparent">
                   みんなで
                 </span>
                 <span className="block bg-cute-gradient bg-clip-text text-transparent">
@@ -117,8 +117,8 @@ export default function LandingPage() {
                 <Smile className="inline h-8 w-8 ml-2 text-yellow-500 animate-heartbeat" />
               </span>
               <br />
-              <span className="text-lg text-pink-600 font-medium">
-                日本で一番可愛いゲーミングコミュニティ 🎮💖
+              <span className="text-lg text-slate-600 font-medium">
+                日本で一番可愛いゲーミングコミュニティ 🎮
               </span>
             </motion.p>
 
@@ -136,9 +136,7 @@ export default function LandingPage() {
                   <Button className="bg-pop-gradient hover:bg-cute-gradient text-white font-black text-xl px-12 py-6 rounded-full shadow-2xl hover:shadow-pink-300/50 transition-all duration-300 min-w-[280px] relative overflow-hidden">
                     <span className="relative z-10 flex items-center">
                       今すぐ始める！ 
-                      <Heart className="ml-3 h-6 w-6 animate-heartbeat" fill="currentColor" />
                     </span>
-                    <div className="absolute inset-0 bg-white/20 animate-pulse" />
                   </Button>
                 </motion.div>
               </Link>
@@ -159,20 +157,20 @@ export default function LandingPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <div className="bg-white/90 rounded-3xl p-6 shadow-xl border-4 border-pink-200 hover:border-purple-300 transition-all duration-300 animate-bubble">
+              <div className="bg-white/90 rounded-3xl p-6 shadow-xl border-4 border-slate-200 hover:border-slate-300 transition-all duration-300 animate-bubble">
                 <div className="text-4xl mb-2">🎯</div>
-                <div className="text-3xl font-black text-purple-700 mb-1">10,000+</div>
-                <div className="text-purple-600 font-medium">アクティブプレイヤー</div>
+                <div className="text-3xl font-black text-slate-700 mb-1">10,000+</div>
+                <div className="text-slate-600 font-medium">アクティブプレイヤー</div>
               </div>
-              <div className="bg-white/90 rounded-3xl p-6 shadow-xl border-4 border-blue-200 hover:border-purple-300 transition-all duration-300 animate-bubble" style={{ animationDelay: '0.2s' }}>
+              <div className="bg-white/90 rounded-3xl p-6 shadow-xl border-4 border-slate-200 hover:border-slate-300 transition-all duration-300 animate-bubble" style={{ animationDelay: '0.2s' }}>
                 <div className="text-4xl mb-2">💫</div>
-                <div className="text-3xl font-black text-purple-700 mb-1">500+</div>
-                <div className="text-purple-600 font-medium">毎日新しいマッチ</div>
+                <div className="text-3xl font-black text-slate-700 mb-1">500+</div>
+                <div className="text-slate-600 font-medium">毎日新しいマッチ</div>
               </div>
-              <div className="bg-white/90 rounded-3xl p-6 shadow-xl border-4 border-green-200 hover:border-purple-300 transition-all duration-300 animate-bubble" style={{ animationDelay: '0.4s' }}>
+              <div className="bg-white/90 rounded-3xl p-6 shadow-xl border-4 border-slate-200 hover:border-slate-300 transition-all duration-300 animate-bubble" style={{ animationDelay: '0.4s' }}>
                 <div className="text-4xl mb-2">🏆</div>
-                <div className="text-3xl font-black text-purple-700 mb-1">99.8%</div>
-                <div className="text-purple-600 font-medium">満足度</div>
+                <div className="text-3xl font-black text-slate-700 mb-1">99.8%</div>
+                <div className="text-slate-600 font-medium">満足度</div>
               </div>
             </motion.div>
           </motion.div>
@@ -194,7 +192,6 @@ export default function LandingPage() {
               <p className="text-2xl text-purple-700 font-bold max-w-3xl mx-auto">
                 他にはない、超キュートで楽しい機能がいっぱい！ ✨
               </p>
-              <div className="absolute -bottom-2 right-1/4 text-2xl animate-dance">🎪</div>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -245,7 +242,6 @@ export default function LandingPage() {
                     
                     {/* Decorative elements */}
                     <div className="absolute top-4 right-4 text-2xl animate-sparkle">✨</div>
-                    <div className="absolute bottom-4 left-4 text-xl animate-heartbeat">💖</div>
                   </div>
                 </motion.div>
               ))}
@@ -260,7 +256,7 @@ export default function LandingPage() {
             <div className="absolute bottom-20 left-20 text-4xl animate-bubble">🎊</div>
             <div className="absolute bottom-10 right-10 text-6xl animate-wiggle">🎯</div>
             <div className="absolute top-1/2 left-1/4 text-3xl animate-sparkle">✨</div>
-            <div className="absolute top-1/3 right-1/3 text-5xl animate-heartbeat">💕</div>
+            <div className="absolute top-1/3 right-1/3 text-5xl">💕</div>
           </div>
           
           <div className="container mx-auto px-4 text-center relative z-10">
@@ -272,18 +268,16 @@ export default function LandingPage() {
               className="max-w-5xl mx-auto"
             >
               <div className="mb-8 relative">
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 text-5xl animate-rainbow">🌈</div>
                 <h2 className="text-6xl md:text-8xl font-black mb-6 text-white drop-shadow-2xl leading-tight">
                   <span className="block">運命の仲間が</span>
                   <span className="block animate-bounce-cute">ここにいる！</span>
                 </h2>
-                <div className="absolute -bottom-4 right-1/4 text-4xl animate-dance">🚀</div>
               </div>
               
               <p className="text-2xl md:text-3xl text-white/95 font-bold mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
                 今すぐ始めて、最高のゲーム体験をしよう！ 
                 <br />
-                <span className="text-xl">みんなで一緒に楽しもうね〜 💖</span>
+                <span className="text-xl">みんなで一緒に楽しもうね〜</span>
               </p>
 
               <motion.div 
@@ -295,7 +289,6 @@ export default function LandingPage() {
                   <Button className="bg-white text-purple-700 font-black text-2xl px-16 py-8 rounded-full shadow-2xl hover:shadow-white/30 transition-all duration-300 min-w-[350px] relative overflow-hidden group">
                     <span className="relative z-10 flex items-center justify-center">
                       💫 今すぐ無料で始める 💫
-                      <Heart className="ml-4 h-8 w-8 animate-heartbeat text-pink-500" fill="currentColor" />
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-pink-400/20 to-purple-400/20 group-hover:from-pink-400/40 group-hover:to-purple-400/40 transition-all" />
                   </Button>
@@ -325,7 +318,7 @@ export default function LandingPage() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-4 left-10 text-3xl animate-float">🌸</div>
           <div className="absolute top-6 right-20 text-2xl animate-dance">✨</div>
-          <div className="absolute bottom-4 left-1/3 text-3xl animate-heartbeat">💖</div>
+          <div className="absolute bottom-4 left-1/3 text-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">

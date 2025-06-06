@@ -28,7 +28,6 @@ export default function HomeSection() {
         >
           <div className="absolute -top-2 -left-2 text-2xl">✨</div>
           <ImageSlider images={sliderImages} />
-          <div className="absolute -bottom-2 -right-2 text-2xl">💖</div>
         </motion.div>
 
         {/* Recruitment Section */}
@@ -37,10 +36,10 @@ export default function HomeSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="flex justify-between items-center mb-6 bg-white/90 rounded-3xl p-6 border-4 border-pink-200 shadow-lg">
+          <div className="flex justify-between items-center mb-6 bg-white/90 rounded-3xl p-6 border-4 border-slate-200 shadow-lg backdrop-blur-sm">
             <div className="flex items-center space-x-3">
               <div className="text-3xl">📝</div>
-              <h2 className="text-3xl font-black bg-pop-gradient bg-clip-text text-transparent">
+              <h2 className="text-3xl font-black text-slate-800">
                 みんなの募集
               </h2>
               <div className="text-2xl">🎯</div>
@@ -49,7 +48,7 @@ export default function HomeSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="bg-cute-gradient hover:bg-soft-pink text-white font-bold px-6 py-3 rounded-full shadow-lg">
+              <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold px-6 py-3 rounded-full shadow-lg">
                 <Plus className="h-5 w-5 mr-2" />
                 募集する！ 📢
               </Button>
@@ -92,18 +91,18 @@ export default function HomeSection() {
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {/* Featured Tournament */}
-          <div className="bg-white/90 rounded-3xl p-6 border-4 border-yellow-200 shadow-xl">
+          <div className="bg-white/90 rounded-3xl p-6 border-4 border-slate-200 shadow-xl backdrop-blur-sm">
             <div className="flex items-center space-x-3 mb-4">
               <div className="text-3xl animate-bounce-cute">🏆</div>
-              <h3 className="text-2xl font-black text-purple-800">注目のトーナメント</h3>
+              <h3 className="text-2xl font-black text-slate-800">注目のトーナメント</h3>
               <div className="text-xl animate-sparkle">✨</div>
             </div>
             <div className="space-y-3">
-              <div className="p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl border-3 border-yellow-300">
-                <h4 className="font-black text-orange-800 mb-2">Winter Championship 2024 ❄️</h4>
-                <p className="text-sm text-orange-700 mb-2">賞金総額: 500万円 💰</p>
-                <p className="text-xs text-orange-600">参加登録受付中！</p>
-                <button className="mt-3 w-full bg-orange-400 text-white font-bold py-2 rounded-xl hover:scale-105 transition-transform">
+              <div className="p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border-3 border-slate-300">
+                <h4 className="font-black text-slate-800 mb-2">Winter Championship 2024 ❄️</h4>
+                <p className="text-sm text-slate-700 mb-2">賞金総額: 500万円 💰</p>
+                <p className="text-xs text-slate-600">参加登録受付中！</p>
+                <button className="mt-3 w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-2 rounded-xl hover:scale-105 transition-transform">
                   参加する 🚀
                 </button>
               </div>
@@ -111,18 +110,18 @@ export default function HomeSection() {
           </div>
 
           {/* Community Spotlight */}
-          <div className="bg-white/90 rounded-3xl p-6 border-4 border-purple-200 shadow-xl">
+          <div className="bg-white/90 rounded-3xl p-6 border-4 border-slate-200 shadow-xl backdrop-blur-sm">
             <div className="flex items-center space-x-3 mb-4">
               <div className="text-3xl">💫</div>
-              <h3 className="text-2xl font-black text-purple-800">コミュニティハイライト</h3>
+              <h3 className="text-2xl font-black text-slate-800">コミュニティハイライト</h3>
               <div className="text-xl">🌟</div>
             </div>
             <div className="space-y-3">
-              <div className="p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl border-3 border-purple-300">
-                <h4 className="font-black text-purple-800 mb-2">今月のMVPプレイヤー 👑</h4>
-                <p className="text-sm text-purple-700 mb-2">ゆめちゃん - VALORANT</p>
-                <p className="text-xs text-purple-600">素晴らしいチームワークで多くの勝利を導きました！</p>
-                <button className="mt-3 w-full bg-purple-400 text-white font-bold py-2 rounded-xl hover:scale-105 transition-transform">
+              <div className="p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border-3 border-slate-300">
+                <h4 className="font-black text-slate-800 mb-2">今月のMVPプレイヤー 👑</h4>
+                <p className="text-sm text-slate-700 mb-2">ゆめちゃん - VALORANT</p>
+                <p className="text-xs text-slate-600">素晴らしいチームワークで多くの勝利を導きました！</p>
+                <button className="mt-3 w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-2 rounded-xl hover:scale-105 transition-transform">
                   プロフィールを見る 👀
                 </button>
               </div>
